@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="page-header">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">ФОТО И ВИДЕО</a></li>
+                        <li><a href="#">КАРТА ШТАТА</a></li>
+                        <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-logo">
+                    <a href="index.html"><img src="http://placehold.it/150x100"></a>
+                </div>
+            </header>
+            <section class="panorama">
+                <img class="panorama-textover" src="http://placehold.it/150x100">
+                <img class="panorama-line" src="http://placehold.it/150x100">
+            </section>
+            <section class="reasons">
+                <h1>СЕДОНА &mdash; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+                <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+            </section>
+            <section class="reasons reasons-blue">
+                <div class="reasons-item">
+                    <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <span>&mdash; №1 &mdash;</span>
+                    <p>СЕДОНА &mdash; НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
+                <div class="reasons-image">
+                    <img src="http://placehold.it/150x100">
+                </div>
+            </section>
+            <section class="recomendations">
+                <div class="recomendations-item">
+                    <img src="http://placehold.it/150x100">
+                    <h2>ЖИЛЬЕ</h2>
+                    <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                </div>
+                <div class="recomendations-item">
+                    <img src="http://placehold.it/150x100">
+                    <h2>ЕДА</h2>
+                    <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                </div>
+                <div class="recomendations-item">
+                    <img src="http://placehold.it/150x100">
+                    <h2>СУВЕНИРЫ</h2>
+                    <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА</p>
+                </div>
+            </section>
+            <section class="reasons reasons-blue">
+                <div class="reasons-image">
+                    <img src="http://placehold.it/150x100">
+                </div>
+                <div class="reasons-item">
+                    <h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+                    <span>&mdash; №2 &mdash;</span>
+                    <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+                </div>
+            </section>
+            <section class="reasons reasons-grey">
+                <div class="reasons-item">
+                    <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                    <span>&mdash; №3 &mdash;</span>
+                      <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                </div>
+                <div class="reasons-item">
+                    <h2>КРАСИВАЯ ДОРОГА</h2>
+                        <span>&mdash; №4 &mdash;</span>
+                        <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+                </div>
+                <div class="reasons-item">
+                    <h2>МАЛО ТУРИСТОВ</h2>
+                    <span>&mdash; №5 &mdash;</span>
+                    <p>БОЛЬШТНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+                </div>
+            </section>
+            <section class="find-hotel">
+                <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+                <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+                <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+            </section>
+            <section class="map">
+                <iframe>
+                </iframe>
+                <form action="#" method="get" style="display: none">
+                    <label>ДАТА ЗАЕЗДА <input type="text" name="check-in-date" placeholder="24 АПРЕЛЯ 2016"></label>
+                    <label>ДАТА ВЫЕЗДА <input type="text" name="check-out-date" placeholder="4 ИЮЛЯ 2016"></label>
+                    <div class="adults">
+                        <label>ВЗРОСЛЫЕ: <input type="button" value="-"><input type="number" name="adults" placeholder="2"><input type="button" value="+"></label>
+                    </div>
+                    <div class="children">
+                        <label>ДЕТИ: <input type="button" value="-"><input type="number" name="children" placeholder="0"><input type="button" value="+"></label>
+                    </div>
+                        <input type="button" value="НАЙТИ">
+                </form>
+            </section>
+            <footer>
+                <div class="hashtag">
+                    <a href="#">#VISITSEDONA</a>
+                </div>
+                <div class="social">
+                    <a href="twitter.com"><img src="http://placehold.it/150x100"></a>
+                    <a href="facebook.com"><img src="http://placehold.it/150x100"></a>
+                    <a href="youtube.com"><img src="http://placehold.it/150x100"></a>
+                </div>
+                <div class="copyright">
+                    <a href="htmlacademy.ru">WEBSITE BY <img src="http://placehold.it/150x100"></a>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
