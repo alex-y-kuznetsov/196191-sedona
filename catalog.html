@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
   </head>
   <body>
-        <header class="page-header">
         <div class="container">
+        <header class="page-header">
             <nav class="navigation">
                 <ul>
                     <li><a href="#">ИНФОРМАЦИЯ</a></li>
                     <li><a href="#">ФОТО И ВИДЕО</a></li>
                     <li><a href="#">КАРТА ШТАТА</a></li>
-                    <li><a href="#">ГОСТИНИЦЫ</a></li>
+                    <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
                 </ul>
             </nav>
             <div class="header-logo">
-                <img src="http://placehold.it/150x100">
+                <a href="index.html"><img src="http://placehold.it/150x100"></a>
             </div>
-        </div>
     </header>
-    <main>
-        <div class="container">
             <section class="accomodation-options">
-                <div class="accomodation-infrastructure">
-                    <form action="#" method="get">
-                        <label><input type="checkbox" checked>БАССЕЙН</label>
-                        <label><input type="checkbox">ПАРКОВКА</label>
-                        <label><input type="checkbox">WI-FI</label>
-                    </form>
-                </div>
-                <div class="accomodation-type">
-                    <form action="#" method="get">
-                        <label><input type="checkbox" checked>ГОСТИНИЦА</label>
-                        <label><input type="checkbox" checked>МОТЕЛЬ</label>
-                        <label><input type="checkbox" checked>АПАРТАМЕНТЫ</label>
-                    </form>
-                </div>
-                <div class="accomodation-cost">
-                    <p>СТОИМОСТЬ В СУТКИ (Р):</p>
-                    <div class="accomodation-cost-range">ОТ 0</div>
-                    <div class="accomodation-cost-range">ДО 3000</div>
-                    <form action="#" method="get">
-                        <input type="range" min="0" max="3000" value="2500">
-                    </form>
-                </div>
+                <form action="#" method="get">
+                    <div class="accomodation-infrastructure">
+                        <h2>ИНФРАСТРУКТУРА:</h2>
+                            <label><input type="checkbox" value="БАССЕЙН" checked>БАССЕЙН</label>
+                            <label><input type="checkbox" value="ПАРКОВКА">ПАРКОВКА</label>
+                            <label><input type="checkbox" value="WI-FI">WI-FI</label>
+                    </div>
+                    <div class="accomodation-type">
+                        <h2>ТИП ЖИЛЬЯ:</h2>
+                            <label><input type="checkbox" value="ГОСТИНИЦА" checked>ГОСТИНИЦА</label>
+                            <label><input type="checkbox" value="МОТЕЛЬ" checked>МОТЕЛЬ</label>
+                            <label><input type="checkbox" value="АПАРТАМЕНТЫ" checked>АПАРТАМЕНТЫ</label>
+                    </div>
+                    <div class="accomodation-cost">
+                        <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
+                            <div class="accomodation-cost-range">
+                                <label>ОТ <input type="text" value="0"></label>
+                            </div>
+                            <div class="accomodation-cost-range">
+                                <label>ДО <input type="text" value="3000"></label>
+                            </div>
+                            <input type="range" min="0" max="3000" value="2500">
+                            <input type="submit" name="submit" value="ПОКАЗАТЬ"
+                    </div>
+                </form>
             </section>
             <section class="search-results">
                 <div class="search-results-number">
-                    <output name="search-results">НАЙДЕНО: 3</output> 
+                    <span>НАЙДЕНО: 3</span>
                 </div>
                 <div class="search-results-sort">
-                    <p>СОРТИРОВКА:</p>
+                    <span>СОРТИРОВКА:</span>
                     <ul>
                         <li><a href="#">ПО ЦЕНЕ</a></li>
                         <li><a href="#">ПО ТИПУ</a></li>
@@ -59,8 +59,8 @@
                     </ul>
                 </div>
                 <div class="search-results-order">
-                    <a href="#"><img src="http://placehold.it/15x10"></a>
-                    <a href="#"><img src="http://placehold.it/15x10"></a>
+                    <a href="#"><i></i></a>
+                    <a href="#"><i></i></a>
                 </div>
             </section>
             <section class="search-results-items">
@@ -69,7 +69,7 @@
                         <img src="http://placehold.it/150x100">
                     </div>
                     <div class="item-specs">
-                        <h2>ARMATA RESORT &amp; SPA</h2>
+                        <span>ARMATA RESORT &amp; SPA</span>
                         <div class="item-details">
                             <span>ГОСТИНИЦА</span>
                             <a href="#">ПОДРОБНЕЕ</a>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="item-rating">
-                        <img src="http://placehold.it/15x10">
+                        <i></i><i></i><i></i><i></i>
                         <span> РЕЙТИНГ: 8,5</span>
                     </div>
                 </article>
@@ -89,7 +89,7 @@
                         <img src="http://placehold.it/150x100">
                     </div>
                     <div class="item-specs">
-                        <h2>DESERT QUAIL INN</h2>
+                        <span>DESERT QUAIL INN</span>
                         <div class="item-details">
                             <span>МОТЕЛЬ</span>
                             <a href="#">ПОДРОБНЕЕ</a>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="item-rating">
-                        <img src="http://placehold.it/15x10">
+                        <i></i><i></i>
                         <span> РЕЙТИНГ: 8,9</span>
                     </div>
                 </article>
@@ -109,7 +109,7 @@
                         <img src="http://placehold.it/150x100">
                     </div>
                     <div class="item-specs">
-                        <h2>VILLAS AT POCO DIABLO</h2>
+                        <span>VILLAS AT POCO DIABLO</span>
                         <div class="item-details">
                             <span>АПАРТАМЕНТЫ</span>
                             <a href="#">ПОДРОБНЕЕ</a>
@@ -120,27 +120,24 @@
                         </div>
                     </div>
                     <div class="item-rating">
-                        <img src="http://placehold.it/15x10">
+                        <i></i><i></i><i></i>
                         <span> РЕЙТИНГ: 9,2</span>
                     </div>
                 </article>
             </section>
-        </div>
-    </main>
     <footer>
-        <div class="container">
-            <div class="hashtag">
-                <a href="#">#VISITSEDONA</a>
-            </div>
+        <div class="hashtag">
+            <a href="#">#VISITSEDONA</a>
+        </div>
             <div class="social">
                 <a href="twitter.com"><img src="http://placehold.it/150x100"></a>
                 <a href="facebook.com"><img src="http://placehold.it/150x100"></a>
                 <a href="youtube.com"><img src="http://placehold.it/150x100"></a>
             </div>
             <div class="copyright">
-                <a href="htmlacademy.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="htmlacademy.ru">WEBSITE BY<img src="http://placehold.it/150x100"></a>
             </div>
-        </div>
     </footer>
+    </div>
   </body>
 </html>
