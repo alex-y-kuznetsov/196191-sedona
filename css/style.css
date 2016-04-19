@@ -1,0 +1,22 @@
+body {
+  /*Типографика*/
+  font-size: 14px;
+  line-height: 26px;
+  color: 333333;
+  font-weight: normal;
+  font-family: "PT Sans Regular", sans-serif;
+}
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+  color: 000000;
+  font-weight: bold;
+  font-family: "PT Sans Bold", sans-serif;
+}
+h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: 000000;
+  font-weight: bold;
+  font-family: "PT Sans Bold", sans-serif;
+}
