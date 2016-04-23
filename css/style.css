@@ -1,22 +1,154 @@
 body {
-  /*Типографика*/
-  font-size: 14px;
-  line-height: 26px;
   color: 333333;
-  font-weight: normal;
+
   font-family: "PT Sans Regular", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 26px;
 }
 h1 {
-  font-size: 21px;
-  line-height: 26px;
   color: 000000;
-  font-weight: bold;
+
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
 }
 h2 {
-  font-size: 21px;
-  line-height: 21px;
   color: 000000;
-  font-weight: bold;
+
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
 }
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.page-header {
+  min-height: 56px;
+
+  font-size: 0;
+
+}
+.page-header li {
+  display: inline-block;
+
+  width: 240px;
+
+  font-size: 16px;
+}
+.page-header li:nth-child(2) {
+  margin-right: 240px;
+}
+.panorama {
+  background-image: url("../img/sedona-background-photo.jpg");
+}
+.reasons-blue {
+  min-height: 256px;
+
+  font-size: 0;
+}
+.reasons-blue .reasons-item {
+  display: inline-block;
+
+  width: 400px;
+  min-height: 256px;
+
+  vertical-align: top;
+
+  background-color: #81b3d2;
+
+  font-size: 16px;
+}
+.reasons-blue .reasons-image {
+  display: inline-block;
+}
+.recomendations {
+  font-size: 0;
+}
+.recomendations-item {
+  display: inline-block;
+
+  width: 400px;
+
+  font-size: 16px;
+}
+.reasons-grey {
+  font-size: 0;
+}
+.reasons-grey .reasons-item {
+  display: inline-block;
+
+  width: 400px;
+
+  background-color: eeeeee;
+
+  font-size: 16px;
+}
+.find-hotel {
+  text-align: center;
+
+}
+.find-hotel a {
+  display: inline-block;
+
+  width: 400px;
+  min-height: 86px;
+
+  background-color: #766357;
+}
+.map {
+  width: 1200px;
+  min-height: 473px;
+
+  background-image: url("../img/sedona-map.png");
+}
+footer{
+  font-size: 0;
+}
+footer div {
+  display: inline-block;
+
+  width: 400px;
+
+  font-size: 16px;
+}
+.accomodation-options {
+  background-image: url("../img/sedona-filter-background.jpg");
+}
+.accomodation-options div {
+  display: inline-block;
+
+  font-size: 16px;
+}
+.accomodation-options input {
+  display: block;
+}
+.search-results,
+.accomodation-options,
+.search-results-items {
+  font-size: 0;
+}
+.search-results div,
+.search-results li {
+  display: inline-block;
+
+  font-size: 16px;
+}
+.search-result-item > div {
+  display: inline-block;
+
+  font-size: 16px;
+}
+.item-specs div {
+  display: inline-block;
+}
+.item-details {
+  width: 110px;
+}
+.item-book {
+  width: 143px;
+}
+÷
