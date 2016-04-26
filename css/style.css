@@ -1,5 +1,6 @@
 body {
   color: 333333;
+  background-color: #f2f2f2;
 
   font-family: "PT Sans Regular", sans-serif;
   font-size: 14px;
@@ -24,26 +25,73 @@ h2 {
 }
 .container {
   width: 1200px;
-  margin: auto;
+  margin: -20px auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 2px #dbdbdb;
 }
 .page-header {
   min-height: 56px;
 
   font-size: 0;
-
+}
+.page-header ul {
+  margin: 0;
+  padding: 0;
 }
 .page-header li {
   display: inline-block;
 
+  box-sizing: border-box;
   width: 240px;
+  padding: 22px 73px;
 
-  font-size: 16px;
+  font-size: 14px;
 }
 .page-header li:nth-child(2) {
   margin-right: 240px;
+  padding-right: 0;
+}
+.page-header li:nth-child(3),
+.page-header li:nth-child(4) {
+  padding-left: 0;
+
+  text-align: right;
+}
+.page-header a {
+  text-decoration: none;
+
+  color: #000000;
+}
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 800px;
 }
 .panorama {
+  min-height: 508px;
+  margin-bottom: 65px;
+
+  text-align: center;
+
   background-image: url("../img/sedona-background-photo.jpg");
+  background-position: center -52px;
+}
+.panorama-textover {
+  margin: 80px 80px auto;
+}
+.panorama-line {
+  margin-bottom: -50px;
+}
+.reasons {
+  text-align: center;
+}
+.reasons h1 {
+  width: 700px;
+  margin: 41px auto;
+}
+.reasons p {
+  margin-bottom: 59px;
 }
 .reasons-blue {
   min-height: 256px;
@@ -53,59 +101,144 @@ h2 {
 .reasons-blue .reasons-item {
   display: inline-block;
 
+  box-sizing: border-box;
   width: 400px;
   min-height: 256px;
+  padding-top: 45px;
 
   vertical-align: top;
 
+  color: #ffffff;
   background-color: #81b3d2;
 
-  font-size: 16px;
+  font-size: 14px;
+}
+.reasons-item h2 {
+  width: 175px;
+  margin: 0 auto;
+}
+.reasons-item span,
+.reasons-item p {
+  position: relative;
+  top: 25px;
+
+  width: 350px;
+  margin: 25px auto;
 }
 .reasons-blue .reasons-image {
   display: inline-block;
 }
 .recomendations {
+  min-height: 330px;
+
+  text-align: center;
+
   font-size: 0;
 }
 .recomendations-item {
+  position: relative;
+  top: 20px;
+
   display: inline-block;
 
   width: 400px;
+  padding: 32px 0;
 
-  font-size: 16px;
+  font-size: 14px;
+}
+.recomendations-item p {
+  width: 340px;
+  margin: auto;
 }
 .reasons-grey {
+  min-height: 256px;
+  margin-top: -13px;
+
+  background-color: #f2f2f2;
+
   font-size: 0;
 }
 .reasons-grey .reasons-item {
+  position: relative;
+  top: 10px;
+
   display: inline-block;
 
   width: 400px;
+  padding: 32px 0;
 
-  background-color: eeeeee;
+  font-size: 14px;
+}
+.reasons-grey p,
+.reasons-grey span {
+  width: 306px;
 
-  font-size: 16px;
+  color: #333333;
 }
 .find-hotel {
-  text-align: center;
+  min-height: 291px;
 
+  text-align: center;
+}
+.find-hotel h3 {
+  padding-top: 38px;
+
+  font-size: 30px;
+}
+.find-hotel p {
+  width: 450px;
+  margin: auto;
+
+  color: #333333;
 }
 .find-hotel a {
+  position: relative;
+  bottom: -59px;
+
   display: inline-block;
 
-  width: 400px;
+  width: 568px;
   min-height: 86px;
 
+  text-decoration: none;
+
+  color: #ffffff;
   background-color: #766357;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 86px;
 }
 .map {
   width: 1200px;
-  min-height: 473px;
+  min-height: 593px;
+
+  text-align: center;
 
   background-image: url("../img/sedona-map.png");
+
+  font-size: 0;
+}
+.map form {
+  display: inline-block;
+
+  width: 568px;
+  min-height: 395px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  font-size: 14px;
+}
+.map input {
+  display: inline-block;
 }
 footer{
+  min-height: 120px;
+
+  opacity: 90%;
+  background-color: #ffffff;
+
   font-size: 0;
 }
 footer div {
@@ -113,42 +246,151 @@ footer div {
 
   width: 400px;
 
-  font-size: 16px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 120px;
+}
+footer .hashtag a {
+  text-decoration: none;
+
+  color: #000000;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+footer .copyright a {
+  text-decoration: none;
+
+  color: #000000;
+}
+footer .copyright img {
+  position: relative;
+  top: 15px;
 }
 .accomodation-options {
+  box-sizing: border-box;
+  min-height: 217px;
+  padding: 0 73px;
+
   background-image: url("../img/sedona-filter-background.jpg");
+
+  font-size: 0;
 }
 .accomodation-options div {
   display: inline-block;
 
+  width: 240px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+}
+.accomodation-options div:nth-child(2) {
+  margin-right: 240px;
+  padding-right: 0;
+}
+.accomodation-cost {
+  width: 480px;
+}
+.accomodation-options h2 {
   font-size: 16px;
+  font-weight: bold;
 }
 .accomodation-options input {
   display: block;
+}
+.accomodation-cost-range {
+  display: inline-block;
 }
 .search-results,
 .accomodation-options,
 .search-results-items {
   font-size: 0;
 }
+.search-results {
+  box-sizing: border-box;
+  padding-top: 37px;
+  padding-bottom: 30px;
+}
 .search-results div,
-.search-results li {
+.search-results li,
+.search-results-sort span,
+.search-results-sort ul {
   display: inline-block;
 
-  font-size: 16px;
+  font-size: 14px;
+}
+.search-results-number span {
+  margin-left: 73px;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+.search-results div {
+  margin-right: 50px;
+}
+.search-results li {
+  padding-right: 35px;
+}
+.search-results a {
+  text-decoration: none;
+}
+.search-results a:first-child {
+  color: #000000;
+}
+.search-results-sort span {
+  margin-right: 40px;
+}
+.search-results-number span {
+  margin-right: 53px;
 }
 .search-result-item > div {
   display: inline-block;
 
-  font-size: 16px;
+  font-size: 14px;
+}
+.search-results,
+.search-result-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.search-result-item {
+  padding-left: 73px;
+}
+.item-image {
+  margin-right: 29px;
+}
+.search-result-item .item-specs a {
+  text-decoration: none;
+
+  color: #000000;
+}
+.item-rating {
+  position: relative;
+  left: 537px;
 }
 .item-specs div {
   display: inline-block;
 }
 .item-details {
   width: 110px;
+  margin-right: 16px;
+}
+.item-details a {
+  min-height: 27px;
+  padding: 8px 17px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 .item-book {
   width: 143px;
+}
+.item-book a {
+  min-height: 27px;
+  padding: 8px 17px;
+
+  color: #ffffff;
+  background-color: #766357;
 }
 ÷
