@@ -353,11 +353,6 @@ footer {
   box-sizing: border-box;
   padding: 30px 72px 25px;
 }
-
-/*.search-results-sort {
-  padding-bottom: 10px;
-}*/
-
 .search-results-number, .search-results-sort, .search-results-order {
   display: inline-block;
   vertical-align: bottom;
