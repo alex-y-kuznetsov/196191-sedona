@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,7 +17,7 @@
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">ФОТО И ВИДЕО</a></li>
           <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+          <li><a class="active" href="catalog.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
       <div class="header-logo">
@@ -28,19 +29,25 @@
         <div class="accomodation-infrastructure">
           <h2>ИНФРАСТРУКТУРА:</h2>
           <label>
+            <span class="icon-check-on"></span>
             <input type="checkbox" value="БАССЕЙН" checked>БАССЕЙН</label>
           <label>
+            <span class="icon-check-off"></span>
             <input type="checkbox" value="ПАРКОВКА">ПАРКОВКА</label>
           <label>
+            <span class="icon-check-off"></span>
             <input type="checkbox" value="WI-FI">WI-FI</label>
         </div>
         <div class="accomodation-type">
           <h2>ТИП ЖИЛЬЯ:</h2>
           <label>
+            <span class="icon-check-on"></span>
             <input type="checkbox" value="ГОСТИНИЦА" checked>ГОСТИНИЦА</label>
           <label>
+            <span class="icon-check-on"></span>
             <input type="checkbox" value="МОТЕЛЬ" checked>МОТЕЛЬ</label>
           <label>
+            <span class="icon-check-on"></span>
             <input type="checkbox" value="АПАРТАМЕНТЫ" checked>АПАРТАМЕНТЫ</label>
         </div>
         <div class="accomodation-cost">
@@ -53,7 +60,13 @@
               <input type="text" name="max" value="3000">
             </label>
           </div>
-          <input type="range" min="0" max="3000" value="2500">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
           <input type="submit" name="submit" value="ПОКАЗАТЬ" </div>
       </form>
     </section>
@@ -64,14 +77,14 @@
       <div class="search-results-sort">
         <span>СОРТИРОВКА:</span>
         <ul>
-          <li><a href="#">ПО ЦЕНЕ</a></li>
-          <li><a href="#">ПО ТИПУ</a></li>
-          <li><a href="#">ПО РЕЙТИНГУ</a></li>
+          <li><a class="sort-price" href="#">ПО ЦЕНЕ</a></li>
+          <li><a class="sort-type" href="#">ПО ТИПУ</a></li>
+          <li><a class="sort-rating" href="#">ПО РЕЙТИНГУ</a></li>
         </ul>
       </div>
       <div class="search-results-order">
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
+        <a href="#"><span class="icon-up-dir"></span></a>
+        <a href="#"><span class="icon-down-dir"></span></a>
       </div>
     </section>
     <section class="search-results-items">
@@ -80,7 +93,7 @@
           <img src="img/sedona-hotel-amara.jpg" width="135" height="90" alt="Armata Resort and Spa">
         </div>
         <div class="item-specs">
-          <h1><a href="#">ARMATA RESORT &amp; SPA</a></h1>
+          <h1><a class="hotel-name" href="#">ARMATA RESORT &amp; SPA</a></h1>
           <div class="item-details">
             <span>ГОСТИНИЦА</span>
             <a href="#">ПОДРОБНЕЕ</a>
@@ -91,8 +104,10 @@
           </div>
         </div>
         <div class="item-rating">
-          <i></i><i></i><i></i><i></i>
-          <span>РЕЙТИНГ: 8,5</span>
+          <div class="rating-stars">
+            <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+          </div>
+          <span class="score">РЕЙТИНГ: 8,5</span>
         </div>
       </article>
       <article class="search-result-item">
@@ -100,7 +115,7 @@
           <img src="img/sedona-hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
         </div>
         <div class="item-specs">
-          <h1><a href="#">DESERT QUAIL INN</a></h1>
+          <h1><a class="hotel-name" href="#">DESERT QUAIL INN</a></h1>
           <div class="item-details">
             <span>МОТЕЛЬ</span>
             <a href="#">ПОДРОБНЕЕ</a>
@@ -111,8 +126,10 @@
           </div>
         </div>
         <div class="item-rating">
-          <i></i><i></i>
-          <span>РЕЙТИНГ: 8,9</span>
+          <div class="rating-stars">
+            <span class="icon-star"></span><span class="icon-star"></span>
+          </div>
+          <span class="score">РЕЙТИНГ: 8,9</span>
         </div>
       </article>
       <article class="search-result-item">
@@ -120,7 +137,7 @@
           <img src="img/sedona-hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </div>
         <div class="item-specs">
-          <h1><a href="#">VILLAS AT POCO DIABLO</a></h1>
+          <h1><a class="hotel-name" href="#">VILLAS AT POCO DIABLO</a></h1>
           <div class="item-details">
             <span>АПАРТАМЕНТЫ</span>
             <a href="#">ПОДРОБНЕЕ</a>
@@ -131,8 +148,10 @@
           </div>
         </div>
         <div class="item-rating">
-          <i></i><i></i><i></i>
-          <span>РЕЙТИНГ: 9,2</span>
+          <div class="rating-stars">
+            <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+          </div>
+          <span class="score">РЕЙТИНГ: 9,2</span>
         </div>
       </article>
     </section>
@@ -141,9 +160,9 @@
         <a href="#">#VISITSEDONA</a>
       </div>
       <div class="social">
-        <a href="twitter.com"><img src="http://placehold.it/15x10"></a>
-        <a href="facebook.com"><img src="http://placehold.it/15x10"></a>
-        <a href="youtube.com"><img src="http://placehold.it/15x10"></a>
+        <a href="twitter.com"><span class="icon-twitter"></span></a>
+        <a href="facebook.com"><span class="icon-facebook"></span></a>
+        <a href="youtube.com"><span class="icon-youtube"></span></a>
       </div>
       <div class="copyright">
         <a href="htmlacademy.ru">WEBSITE BY <img src="img/sedona-copyright.png" width="113" height="39" alt="HTMLAcademy"></a>
@@ -178,3 +197,4 @@
 </body>
 
 </html>
+l>
