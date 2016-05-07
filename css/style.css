@@ -1,30 +1,36 @@
 body {
   color: #333333;
   background-color: #f2f2f2;
+
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
 }
 @font-face {
+  font-family: "symbols-sedona";
   font-weight: normal;
   font-style: normal;
-  font-family: "symbols-sedona";
+
   src: url("../fonts/symbols-sedona.woff") format("woff"), url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 [class^="icon-"]::before, [class*=" icon-"]::before {
   display: inline-block;
+
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
+
   text-align: center;
-  text-transform: none;
   text-decoration: inherit;
+  text-transform: none;
+
+  font-family: "symbols-sedona";
+  font-weight: normal;
   font-style: normal;
   font-variant: normal;
+  line-height: 1em;
+
   speak: none;
 }
 .icon-facebook::before {
@@ -95,7 +101,9 @@ body {
 
 h1, h2 {
   margin: 0;
+
   color: #000000;
+
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: bold;
@@ -112,12 +120,15 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
+
   background: #ffffff;
   box-shadow: 0 0 2px 2px #dbdbdb;
 }
 .page-header {
   position: relative;
+
   min-height: 56px;
+
   font-size: 0;
 }
 .page-header ul {
@@ -126,17 +137,21 @@ h3 {
 }
 .page-header li {
   display: inline-block;
+
   box-sizing: border-box;
   width: 240px;
   padding: 15px 0;
+
   text-align: center;
   vertical-align: top;
+
   font-size: 14px;
   font-weight: bold;
 }
 .page-header li:nth-child(1) {
   box-sizing: border-box;
   padding-left: 72px;
+
   text-align: left;
 }
 .page-header li:nth-child(2) {
@@ -145,10 +160,12 @@ h3 {
 }
 .page-header li:nth-child(4) {
   padding-right: 72px;
+
   text-align: right;
 }
 .page-header a {
   text-decoration: none;
+
   color: #000000;
 }
 .page-header a:hover {
@@ -170,11 +187,14 @@ h3 {
   position: absolute;
   top: 0;
   left: 50%;
+
   transform: translateX(-50%);
 }
 .panorama {
   min-height: 508px;
+
   text-align: center;
+
   background: #324c4e url("../img/sedona-background-photo.jpg");
   background-position: center -52px;
 }
@@ -200,43 +220,58 @@ h3 {
 }
 .reasons-blue {
   padding: 0;
+
   font-size: 0;
 }
 .reasons-blue .reasons-item {
   display: inline-block;
+
   box-sizing: border-box;
   width: 400px;
   padding: 45px 0;
+
   vertical-align: top;
+
   color: #ffffff;
   background: #81b3d2;
+
   font-size: 14px;
 }
 .reasons-item h2 {
-  padding-bottom: 20px;
   padding-top: 10px;
+  padding-bottom: 20px;
+
   color: #ffffff;
 }
 .reasons-item span, .reasons-item p {
   position: relative;
+
   margin: 10px auto 0;
 }
 .reasons-blue .reasons-image {
   display: inline-block;
+
   vertical-align: top;
+
   line-height: 0;
 }
 .recomendations {
   padding-top: 60px;
   padding-bottom: 75px;
+
   text-align: center;
+
   font-size: 0;
 }
 .recomendations-item {
   position: relative;
+
   display: inline-block;
+
   width: 400px;
+
   vertical-align: top;
+
   font-size: 14px;
 }
 .recomendations-item h2 {
@@ -246,27 +281,35 @@ h3 {
   margin: auto;
 }
 .reasons-grey {
-  background: #f2f2f2;
-  font-size: 0;
   padding-top: 40px;
   padding-bottom: 60px
+
+  background: #f2f2f2;
+
+  font-size: 0;
 }
 .reasons-grey h2 {
   color: #000000;
 }
 .reasons-grey .reasons-item {
   position: relative;
+
   display: inline-block;
+
   width: 400px;
+
   vertical-align: top;
+
   font-size: 14px;
 }
 .reasons-grey p, .reasons-grey span {
   color: #333333;
+
   line-height: 21px;
 }
 .find-hotel {
   padding: 55px 0 0;
+
   text-align: center;
 }
 .find-hotel h3 {
@@ -274,19 +317,26 @@ h3 {
 }
 .find-hotel p {
   margin: 30px 0;
-  color: #333333;
   padding-bottom: 15px;
+
+  color: #333333;
+
   line-height: 24px;
 }
 .find-hotel a {
   position: relative;
+
   display: inline-block;
+
   width: 568px;
   min-height: 86px;
+
   vertical-align: top;
   text-decoration: none;
+
   color: #ffffff;
   background: #766357;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 86px;
@@ -294,8 +344,11 @@ h3 {
 .map {
   width: 1200px;
   min-height: 593px;
+
   text-align: center;
+
   background: #f2f1ef url("../img/sedona-map.png");
+
   font-size: 0;
 }
 .map form {
@@ -304,14 +357,17 @@ h3 {
   min-height: 395px;
   margin: 0 auto;
   padding: 55px;
+
   background: #ffffff;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
 }
 .map label:not(:first-child) {
   display: inline-block;
+
   padding-top: 29px;
 }
 .adults, .children {
@@ -324,6 +380,7 @@ h3 {
 .adults input, .children input {
   width: 38px;
   padding: 6px;
+
   text-align: center;
 }
 
@@ -333,9 +390,12 @@ h3 {
 
 .map input {
   display: inline-block;
+
   vertical-align: middle;
+
   border: none;
   background: #f2f2f2;
+
   font-size: 14px;
   line-height: 26px;
 }
@@ -345,16 +405,20 @@ input[name="check-in-date"], input[name="check-out-date"] {
 }
 .find {
   padding-top: 55px;
+
   font-weight: bold;
 }
 .find input {
   display: inline-block;
+
   width: 458px;
   padding-top: 16px;
   padding-bottom: 16px;
+
   color: #ffffff;
   border: none;
   background-color: #81b3d2;
+
   font-size: 21px;
   line-height: 26px;
 }
@@ -362,8 +426,8 @@ input[name="check-in-date"], input[name="check-out-date"] {
   background: #ebebeb;
 }
 .map input[type="text"]:focus {
-  background: #ffffff;
   outline: 2px solid #e5e5e5;
+  background: #ffffff;
 }
 .children input[type="button"], .adults input[type="button"] {
   color: #a9a9a9;
@@ -379,13 +443,15 @@ input[name="check-in-date"], input[name="check-out-date"] {
   background: #669ec0;
 }
 .find input:active {
-  background: #5496bd;
   color: #88b6d1;
   outline: none;
+  background: #5496bd;
 }
 footer {
   padding: 40px 0;
+
   background: #ffffff;
+
   font-size: 0;
 }
 .footer-main {
@@ -393,27 +459,35 @@ footer {
 }
 .hashtag, .social, .copyright {
   display: inline-block;
+
   width: 400px;
+
   text-align: center;
   vertical-align: middle;
+
   font-size: 14px;
 }
 .hashtag a {
   text-decoration: none;
+
   color: #000000;
+
   font-size: 21px;
   font-weight: bold;
 }
 .icon-twitter, .icon-facebook, .icon-youtube {
+  margin-right: 2px;
+  padding: 12px 10px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+
   font-size: 19px;
   line-height: 20px;
-  color: #ffffff;
-  padding: 12px 10px;
-  background-color: #81b3d2;
-  margin-right: 2px;
 }
 .copyright a {
   text-decoration: none;
+
   color: #000000;
 }
 .copyright img {
@@ -423,13 +497,18 @@ footer {
 .accomodation-options {
   box-sizing: border-box;
   padding: 30px 72px 13px;
+
   background: #686f77 url("../img/sedona-filter-background.jpg");
+
   font-size: 0;
 }
 .accomodation-infrastructure, .accomodation-type, .accomodation-cost {
   display: inline-block;
+
   vertical-align: top;
+
   color: #ffffff;
+
   font-size: 14px;
   line-height: 26px;
 }
@@ -438,9 +517,11 @@ footer {
 }
 .accomodation-infrastructure label, .accomodation-type label {
   display: inline-block;
-  vertical-align: top;
+
   width: 240px;
   padding-bottom: 15px;
+
+  vertical-align: top;
 }
 .icon-check-on, .icon-check-off {
   font-size: 26px;
@@ -457,43 +538,54 @@ footer {
   margin-bottom: 18px;
 }
 .accomodation-cost-range {
-  display: inline-block;
-  width: 315px;
   position: relative;
-  vertical-align: top;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  font-size: 0;
+
+  display: inline-block;
+
+  width: 315px;
   margin-bottom: 20px;
-  line-height: 21px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-left: 10px;
+
+  vertical-align: top;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+  font-size: 0;
+  line-height: 21px;
 }
 .range-controls {
   position: relative;
+
   margin-bottom: 32px;
   margin-left: 10px;
 }
 .range-controls .scale {
   height: 2px;
+
   background: rgba(255, 255, 255, 0.3);
 }
 .range-controls .bar {
   width: 80%;
   height: 2px;
+
   background: #ffffff;
 }
 .range-toggle {
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
   position: absolute;
   top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  cursor: pointer;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 .range-toggle-min {
   left: 0%;
@@ -505,14 +597,17 @@ footer {
   background: #1c4f80;
 }
 .accomodation-cost-range::after {
-  content: "";
   position: absolute;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
   top: 50%;
   left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  content: "";
   transform: translate(-50%, -50%);
+
+  background: #ffffff;
 }
 .accomodation-cost-range label {
   font-size: 14px;
@@ -520,40 +615,49 @@ footer {
 .accomodation-cost-range input {
   width: 50px;
   margin: 0;
+
   color: #ffffff;
   border: none;
-  background: none;
   outline: none;
+  background: none;
 }
 .accomodation-cost-range .min, .accomodation-cost-range .max {
   display: inline-block;
+
   width: 90px;
   padding-left: 65px;
+
   vertical-align: top;
 }
 .accomodation-cost input[type="submit"] {
   display: inline-block;
+
   width: 137px;
+  margin-left: 95px;
   padding: 6px 32px;
+
+  cursor: pointer;
   vertical-align: top;
+
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 2px;
   background: transparent;
+
   font-size: 14px;
   line-height: 21px;
-  margin-left: 95px;
-  cursor: pointer;
 }
 .accomodation-cost input[type="submit"]:hover {
-  background: #ffffff;
   color: #000000;
+  background: #ffffff;
 }
 .accomodation-options h2 {
+  padding: 0;
+
+  color: #ffffff;
+
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
-  padding: 0;
 }
 .accomodation-options input {
   display: inline-block;
@@ -576,6 +680,7 @@ footer {
 }
 .search-results-number, .search-results-sort, .search-results-order {
   display: inline-block;
+
   vertical-align: bottom;
 }
 .search-results-number, .item-image {
@@ -593,24 +698,29 @@ footer {
   line-height: 1;
 }
 .search-results ul {
+  display: inline-block;
+
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 .search-results a {
   text-decoration: none;
 }
 .search-results-sort span {
+  padding-right: 35px;
+
   font-size: 12px;
   line-height: 1;
-  padding-right: 35px;
 }
 .search-results-sort li {
+  display: inline-block;
+
+  padding-right: 35px;
+
   list-style-type: none;
+
   font-size: 12px;
   line-height: 1;
-  display: inline-block;
-  padding-right: 35px;
 }
 .sort-price {
   color: #92bdd8;
@@ -624,21 +734,34 @@ footer {
 .search-results-sort a:active {
   color: #000000;
 }
+/*.search-results-order a {
+  display: inline-block;
+
+  width: 30px;
+
+}
+.icon-up-dir {
+  width: 30px;
+}*/
 .search-results-items {
   margin: 0;
+
   font-size: 0;
 }
 .item-specs {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 .item-image, .item-specs, .item-rating {
   display: inline-block;
+
   vertical-align: top;
+
   font-size: 14px;
 }
 .hotel-name {
   text-decoration: none;
+
   color: #000000;
 }
 .hotel-name:hover {
@@ -651,31 +774,37 @@ footer {
   background-color: #669ec0;
 }
 .item-details a:active {
-  background-color: #5496bd;
   color: #88b6d1;
+  background-color: #5496bd;
 }
 .item-book a:hover {
   background-color: #604e43;
 }
 .item-book a:active {
-  background-color: #503e33;
   color: #857871;
+  background-color: #503e33;
 }
 .item-rating .score {
+  display: block;
+
+  padding: 6px 6px;
+
+  text-align: center;
+
   color: #8b8b8b;
   background-color: #f2f2f2;
+
   font-size: 14px;
   line-height: 1;
-  display: block;
-  padding: 6px 6px;
-  text-align: center;
 }
 .item-rating .icon-star {
-  font-size: 18px;
   color: #81b3d2;
+
+  font-size: 18px;
 }
 .rating-stars {
   padding-bottom: 37px;
+
   text-align: right;
 }
 .item-rating span {
@@ -685,11 +814,12 @@ footer {
   color: #ffffff;
 }
 .item-details {
-  margin-right: 2px;
   width: 110px;
+  margin-right: 2px;
 }
 .item-details, .item-book {
   display: inline-block;
+
   vertical-align: top;
 }
 .item-book {
@@ -697,13 +827,17 @@ footer {
 }
 .item-details a, .item-book a {
   display: block;
+
   width: 100%;
   padding: 3px 0;
+
   text-align: center;
+  text-decoration: none;
+
   color: #ffffff;
+
   font-size: 14px;
   line-height: 21px;
-  text-decoration: none;
 }
 .item-details a {
   background: #81b3d2;
