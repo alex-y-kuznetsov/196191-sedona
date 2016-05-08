@@ -383,12 +383,10 @@ h3 {
 .children-inputs {
   display: inline-block;
 }
-/*.adults, .children {
-  width: 228px;
-}*/
+
 .adults input[type="text"],
 .children input[type="text"] {
-  width: 50px;
+  width: 25px;
 }
 .from,
 .till {
@@ -455,19 +453,25 @@ input[name="check-out-date"] {
 .icon-calendar:active {
   color: #81b3d2;
 }
-/*.minus, .plus {
-  position: relative;
-}
-.adults-imputs + .minus::before {
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  content: "\e802";
+.btn-plus,
+.btn-minus {
+   padding: 6px 8px;
 
-  font-family: "symbols-sedona";
-  font-size: 24px;
-}*/
+   color: #a9a9a9;
+   border: none;
+   background-color: #f2f2f2;
+
+   font-size: 14px;
+ }
+ .btn-plus:hover,
+ .btn-minus:hover {
+   color: #000000;
+ }
+ .btn-plus:active,
+ .btn-minus:active {
+   color: #81b3d2;
+ }
 
 .find {
   padding-top: 55px;
@@ -521,7 +525,7 @@ footer {
   font-size: 0;
 }
 .footer-main {
-  margin-top: -128px;
+  margin-top: -120px;
 
   background: rgba(255, 255, 255, 0.9);
 }
@@ -569,26 +573,23 @@ footer {
 .copyright a,
 .copyright a::after {
   display: inline-block;
+
+  vertical-align: middle;
 }
 .copyright a::after {
   width: 113px;
   height: 39px;
+  margin-left: 5px;
 
-  content: '';
+  content: "";
 
   background: #ffffff url("../img/sedona-copyright-sprite.png");
   background-position: -5px -5px;
 }
-.copyright a::after:hover {
-  content: '';
-
-  background: #ffffff url("../img/sedona-copyright-sprite.png");
+.copyright a:hover::after {
   background-position: -5px -103px;
 }
-.copyright a::after:active {
-  content: '';
-
-  background: #ffffff url("../img/sedona-copyright-sprite.png");
+.copyright a:active::after {
   background-position: -5px -54px;
 }
 
@@ -817,11 +818,11 @@ input[type="checkbox"] + label::before:disabled {
   width: 110px;
 }
 .search-results-order {
+  margin: 0;
+
   text-align: right;
 }
 .search-results-order a {
-  text-decoration: none;
-
   color: #cccccc;
 
   font-size: 23px;
@@ -831,10 +832,10 @@ input[type="checkbox"] + label::before:disabled {
 
   font-size: 23px;
 }
-.search-results-order a:hover {
+.search-results-order span:hover {
   color: #000000;
 }
-.search-results-order a:active {
+.search-results-order span:active {
   color: #81b3d2;
 }
 .search-results-number span {
