@@ -102,25 +102,48 @@
     </section>
     <section class="map">
       <form action="#" method="get">
-        <label>ДАТА ЗАЕЗДА:
-          <input type="text" name="check-in-date" placeholder="24 АПРЕЛЯ 2016">
-        </label>
-        <label>ДАТА ВЫЕЗДА:
-          <input type="text" name="check-out-date" placeholder="4 ИЮЛЯ 2016">
-        </label>
-        <div class="adults">
-          <label>ВЗРОСЛЫЕ:
-            <input type="button" value="-">
-            <input type="number" name="adults" placeholder="2">
-            <input type="button" value="+">
-          </label>
+
+        <div class="from">
+          <div class="date">
+            <label for="date-in">ДАТА ЗАЕЗДА:</label>
+          </div>
+          <div class="date-input">
+            <span class="icon-calendar"></span>
+            <input type="text" id="date-in" name="check-in-date" placeholder="24 АПРЕЛЯ 2016">
+          </div>
         </div>
-        <div class="children">
-          <label>ДЕТИ:
-            <input type="button" value="-">
-            <input type="number" name="children" placeholder="0">
-            <input type="button" value="+">
-          </label>
+
+        <div class="till">
+          <div class="date">
+            <label for="date-out">ДАТА ВЫЕЗДА:</label>
+          </div>
+          <div class="date-input">
+            <span class="icon-calendar"></span>
+            <input type="text" id="date-out" name="check-out-date" placeholder="4 ИЮЛЯ 2016">
+          </div>
+        </div>
+        <div class="guests">
+          <div class="adults">
+            <div class="adults-title">
+              <label for="adlt">ВЗРОСЛЫЕ:</label>
+            </div>
+            <div class="adults-inputs">
+              <input class="minus" type="button" value="-">
+              <input type="text" id="adlt" name="adults" placeholder="2">
+              <input class="plus" type="button" value="+">
+            </div>
+          </div>
+
+          <div class="children">
+            <div class="children-title">
+              <label for="chld">ДЕТИ:</label>
+            </div>
+            <div class="children-inputs">
+              <input type="button" value="-">
+              <input type="text" id="chld" name="children" placeholder="0">
+              <input type="button" value="+">
+            </div>
+          </div>
         </div>
         <div class="find">
           <input type="button" value="НАЙТИ">
@@ -137,32 +160,10 @@
         <a href="youtube.com"><span class="icon-youtube"></span></a>
       </div>
       <div class="copyright">
-        <a href="htmlacademy.ru">WEBSITE BY <img src="img/sedona-copyright.png" width="113" height="39" alt="HTMLAcademy"></a>
+        <a href="htmlacademy.ru">WEBSITE BY </a>
       </div>
     </footer>
   </div>
-</body>
-
-</html>
->
-</footer>
-</div>
-</body>
-
-</html>
-
-</html>
->
-</footer>
-</div>
-</body>
-
-</html>
-
-</html>
->
-</footer>
-</div>
 </body>
 
 </html>
