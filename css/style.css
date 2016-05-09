@@ -346,6 +346,8 @@ h3 {
   line-height: 86px;
 }
 .map {
+  position: relative;
+
   width: 1200px;
   min-height: 593px;
 
@@ -355,15 +357,21 @@ h3 {
 
   font-size: 0;
 }
-.map form {
-  position: relative;
+.popup-form {
+  position: absolute;
   z-index: 20;
+  top: 0;
+  left: 50%;
+
+  display: none;
 
   box-sizing: border-box;
   width: 568px;
   min-height: 395px;
   margin: 0 auto;
   padding: 55px;
+
+  transform: translateX(-50%);
 
   background: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -372,7 +380,46 @@ h3 {
   font-weight: bold;
   line-height: 26px;
 }
-.map input {
+.popup-form-show {
+  display: block;
+
+  animation-name: slide-in;
+  animation-duration: 0.7s;
+
+  animation-fill-mode: forwards;
+}
+.popup-form-hide {
+  display: block;
+
+  animation-name: slide-out;
+  animation-duration: 0.5s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  /*0% {
+    transform: translateX(-2000px);
+  }
+  70% {
+    transform: translateX(30px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }*/
+}
+@keyframes slide-out {
+  100% {
+    opacity: 0;
+  }
+}
+
+.popup-form input {
   border: none;
   background-color: #f2f2f2;
 }
