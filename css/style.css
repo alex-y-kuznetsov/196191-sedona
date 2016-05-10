@@ -176,16 +176,16 @@ h3 {
   color: #81b3d2;
 }
 .page-header a:active {
-  color: #bcbcbc;
+  color: #dadada;
 }
 .page-header a.active {
-  color: #dad5d2;
+  color: #766357;
 }
 .page-header a.active:hover {
-  color: #b5aca7;
+  color: #604e43;
 }
 .page-header a.active:active {
-  color: #d6d0cc;
+  color: #dbd8d5;
 }
 .header-logo {
   position: absolute;
@@ -849,7 +849,7 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
-input[type="checkbox"] + label::before:disabled {
+input[type="checkbox"]:disabled + label::before {
   color: #6a6a6a;
 }
 .search-results, .accomodation-options, .search-results-items {
@@ -889,16 +889,16 @@ input[type="checkbox"] + label::before:disabled {
 
   font-size: 23px;
 }
+.icon-up-dir:hover {
+  color: #000000;
+}
+.icon-up-dir:active {
+  color: #81b3d2;
+}
 .icon-down-dir {
   color: #81b3d2;
 
   font-size: 23px;
-}
-.search-results-order span:hover {
-  color: #000000;
-}
-.search-results-order span:active {
-  color: #81b3d2;
 }
 .search-results-number span {
   font-size: 21px;
@@ -931,13 +931,14 @@ input[type="checkbox"] + label::before:disabled {
   line-height: 1;
 }
 .sort-price {
-  color: #92bdd8;
+  color: #81b3d2;
 }
 .sort-type, .sort-rating {
-  border-bottom: 1px #92bdd8 dotted;
+  color: #cacaca;
+  border-bottom: 1px #81b3d2 dotted;
 }
 .search-results-sort a:hover {
-  color: #92bdd8;
+  color: #81b3d2;
 }
 .search-results-sort a:active {
   color: #000000;
