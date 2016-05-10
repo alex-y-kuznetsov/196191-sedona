@@ -383,20 +383,20 @@ h3 {
 .popup-form-show {
   display: block;
 
-  -webkit-animation-name: slide-in 0.7s;
-  animation-name: slide-in 0.7s;
+  -webkit-animation: slide-in 0.7s forwards;
+  animation: slide-in 0.7s forwards;
 
 }
 .popup-form-hide {
   display: block;
 
-  -webkit-animation-name: slide-out 0.6s;
-  animation-name: slide-out 0.6s;
+  -webkit-animation: slide-out 0.6s forwards;
+  animation: slide-out 0.6s forwards;
 
 }
 .popup-form-error {
-  -webkit-animation-name: error 0.6s;
-  animation-name: error 0.6s;
+  -webkit-animation: error 0.6s forwards;
+  animation: error 0.6s forwards;
 
 }
 @-webkit-keyframes slide-in {
@@ -496,7 +496,7 @@ input[name="check-out-date"] {
 .adults-inputs input,
 .children-title,
 .children-inputs input {
-  font-size: 14px
+  font-size: 14px;
 }
 .adults-inputs input,
 .children-inputs input {
