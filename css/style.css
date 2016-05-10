@@ -383,26 +383,30 @@ h3 {
 .popup-form-show {
   display: block;
 
-  animation-name: slide-in;
-  animation-duration: 0.7s;
+  -webkit-animation-name: slide-in 0.7s;
+  animation-name: slide-in 0.7s;
 
-  animation-fill-mode: forwards;
 }
 .popup-form-hide {
   display: block;
 
-  animation-name: slide-out;
-  animation-duration: 0.5s;
+  -webkit-animation-name: slide-out 0.6s;
+  animation-name: slide-out 0.6s;
 
-  animation-fill-mode: forwards;
 }
 .popup-form-error {
-  animation-name: error;
-  animation-duration: 0.6s;
+  -webkit-animation-name: error 0.6s;
+  animation-name: error 0.6s;
 
-  animation-fill-mode: forwards;
 }
-
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slide-in {
   0% {
     opacity: 0;
@@ -410,11 +414,26 @@ h3 {
   100% {
     opacity: 1;
   }
-
+}
+@-webkit-keyframes slide-out {
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes slide-out {
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes error {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 50%, 80% {
+    transform: translateX(10px);
   }
 }
 @keyframes error {
@@ -900,6 +919,13 @@ input[type="checkbox"]:disabled + label::before {
 
   font-size: 23px;
 }
+.icon-up-dir::before,
+.icon-down-dir::before {
+  width: 10px;
+}
+.icon-star::before {
+  width: 15px;
+}
 .search-results-number span {
   font-size: 21px;
   font-weight: bold;
@@ -942,6 +968,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 .search-results-sort a:active {
   color: #000000;
+  border-bottom: none;
 }
 .search-results-items {
   margin: 0;
